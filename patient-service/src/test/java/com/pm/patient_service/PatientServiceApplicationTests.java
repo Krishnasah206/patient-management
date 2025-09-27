@@ -1,4 +1,4 @@
-package com.pm.patient_service;
+package com.pm.patientService;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
