@@ -1,5 +1,24 @@
 POST http://localhost:4000/patients
 content-Type: application/json
+Content-Length: 181
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.2
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "name": "Ankush Raut checking kafka",
+  "email": "ankushsah2060@gmail.com",
+  "address": "Bhubaneswar, Odisha",
+  "dateOfBirth": "2003-08-05",
+  "registeredDate": "2025-05-17"
+}
+
+<> 2025-09-29T132437.200.json
+
+###
+
+POST http://localhost:4000/patients
+content-Type: application/json
 Content-Length: 182
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.2.2
 Accept-Encoding: br, deflate, gzip, x-gzip
