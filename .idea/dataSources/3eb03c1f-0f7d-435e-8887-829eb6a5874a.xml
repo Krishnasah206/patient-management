@@ -11,9 +11,9 @@
 4||10|c|G
 4||10|C|G
 4||10|T|G</Grants>
-      <IntrospectionStateNumber>765</IntrospectionStateNumber>
+      <IntrospectionStateNumber>771</IntrospectionStateNumber>
       <ServerVersion>18.0</ServerVersion>
-      <StartupTime>1759142636</StartupTime>
+      <StartupTime>1759145894</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -707,7 +707,7 @@ true posixrules
 13293||10|C|G
 13293||-9223372036854775808|U|G
 13293||10|U|G</Grants>
-      <IntrospectionStateNumber>765</IntrospectionStateNumber>
+      <IntrospectionStateNumber>771</IntrospectionStateNumber>
       <ObjectId>16384</ObjectId>
       <OwnerName>admin_user</OwnerName>
     </database>
@@ -4228,14 +4228,82 @@ true posixrules
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <LastIntrospectionL1Xid>765</LastIntrospectionL1Xid>
-      <LastIntrospectionL2Xid>765</LastIntrospectionL2Xid>
-      <LastIntrospectionL3Xid>765</LastIntrospectionL3Xid>
+      <LastIntrospectionL1Xid>771</LastIntrospectionL1Xid>
+      <LastIntrospectionL2Xid>771</LastIntrospectionL2Xid>
+      <LastIntrospectionL3Xid>771</LastIntrospectionL3Xid>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2025-09-29.10:47:13</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2025-09-29.11:43:26</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>546</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
+    <table id="273" parent="272" name="users">
+      <DetailsLevel>2</DetailsLevel>
+      <ObjectId>16389</ObjectId>
+      <StateNumber>768</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>admin_user</OwnerName>
+    </table>
+    <column id="274" parent="273" name="id">
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>768</StateNumber>
+      <StoredType>uuid|0s</StoredType>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="275" parent="273" name="email">
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>768</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="276" parent="273" name="password">
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>768</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="277" parent="273" name="role">
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>770</StateNumber>
+      <StoredType>varchar(255)|0s</StoredType>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="278" parent="273" name="users_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16398</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>768</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <index id="279" parent="273" name="users_email_key">
+      <ColNames>email</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16400</ObjectId>
+      <StateNumber>768</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationNames>default</CollationNames>
+      <CollationIds>100</CollationIds>
+      <CollationParentNames>pg_catalog</CollationParentNames>
+    </index>
+    <key id="280" parent="273" name="users_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16399</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>768</StateNumber>
+      <UnderlyingIndexId>16398</UnderlyingIndexId>
+    </key>
+    <key id="281" parent="273" name="users_email_key">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16401</ObjectId>
+      <StateNumber>768</StateNumber>
+      <UnderlyingIndexId>16400</UnderlyingIndexId>
+    </key>
   </database-model>
 </dataSource>

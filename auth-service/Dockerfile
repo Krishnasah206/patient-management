@@ -2,14 +2,18 @@ FROM maven:3.9.9-eclipse-temurin-21 AS builder
 
 WORKDIR /app
 
+# Copy pom.xml first to leverage Docker cache
 COPY pom.xml .
 
 RUN mvn dependency:go-offline -B
 
+# Now copy sources
 COPY src ./src
 
-RUN mvn clean package
+# Build without running tests
+RUN mvn clean package -DskipTests
 
+# Runtime stage
 FROM openjdk:21-jdk AS runner
 
 WORKDIR /app
