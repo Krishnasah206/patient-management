@@ -1,1 +1,2 @@
 GET http://localhost:4004/api/patients
+Authorization: Bearer 354h54h5g45h4g5h4g5hg4hg5h4gh
